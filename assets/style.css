@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000000;
+    color: white;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background: #111111;
+    padding: 1rem 0;
+    border-bottom: 2px solid #e74c3c;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #e74c3c;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #111111, #222222);
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    margin: 2rem 0;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+/* Auth Container */
+.auth-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: #111;
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid #333;
+}
+
+.auth-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tab-btn.active {
+    color: #e74c3c;
+    border-bottom: 2px solid #e74c3c;
+}
+
+.auth-form {
+    display: none;
+}
+
+.auth-form.active {
+    display: block;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    background: #000;
+    border: 1px solid #333;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #e74c3c;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #e74c3c;
+    color: white;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid #333;
+}
